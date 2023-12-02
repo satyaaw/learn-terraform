@@ -49,5 +49,5 @@ resource "aws_route53_record" "mysql" {
   name    = "mysql-dev"
   type    = "A"
   ttl     = 300
-  records = [aws_instance.backend.private_ip]
+  records = [aws_instance.mysql.private_ip]
 }
